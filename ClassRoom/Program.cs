@@ -17,9 +17,10 @@ namespace ClassRoom {
             Console.WriteLine($"Class {newClass.ClassName} from {newClass.SemesterStart}");
             Console.WriteLine("Students:");
             foreach(Student s in newClass.ClassList) {
-                Console.WriteLine($"{s.Name} born {s.BirthMonth}-{s.BirthDay}");
+                Console.WriteLine($"{s.Name} born {s.BirthMonth}-{s.BirthDay} (birthday in {s.BirthSeason()})");
             }
             Console.WriteLine("Class output completed.");
+            Console.WriteLine();
             Console.ReadKey();
         }
     }

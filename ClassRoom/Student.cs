@@ -30,5 +30,26 @@ namespace ClassRoom {
             get { return _birthDay; }
             set { _birthDay = value; }
         }
+
+        public string BirthSeason() {
+            int seasonDivision = _birthMonth / 3;
+            string season = "";
+
+            switch(seasonDivision) {
+                case 1:
+                    season = "spring";
+                    break;
+                case 2:
+                    season = "summer";
+                    break;
+                case 3:
+                    season = "autumn";
+                    break;
+                default:
+                    season = "winter";
+                    break;
+            }
+            return season;
+        }
     }
 }
