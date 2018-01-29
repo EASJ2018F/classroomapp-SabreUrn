@@ -22,6 +22,7 @@ namespace ClassRoom {
         }
         public List<Student> ClassList {
             get { return _classList; }
+            set { _classList = value; }
         }
         public DateTime SemesterStart {
             get { return _semesterStart; }
