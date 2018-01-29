@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,12 @@ namespace ClassRoom {
             foreach(Student s in newClass.ClassList) {
                 Console.WriteLine($"{s.Name} born {s.BirthMonth}-{s.BirthDay} (birthday in {s.BirthSeason()})");
             }
+            Console.WriteLine("Student birthdays sorted by season:");
+            //Stopwatch stopwatch = new Stopwatch(); //for counting fastest method
+            //stopwatch.Start();
+            newClass.CountBirthdaysInSeasons();
+            //stopwatch.Stop();
+            //Console.WriteLine("Stopwatch ticks elapsed: " + stopwatch.ElapsedTicks);
             Console.WriteLine("Class output completed.");
             Console.WriteLine();
             Console.ReadKey();
