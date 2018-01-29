@@ -12,7 +12,11 @@ namespace ClassRoom {
 
         public Student(string name, int birthMonth, int birthDay) {
             _name = name;
-            _birthMonth = birthMonth;
+            if (birthMonth >= 1 && birthMonth <= 12) {
+                _birthMonth = birthMonth;
+            } else {
+                _birthMonth = 1;
+            }
             _birthDay = birthDay;
         }
 
