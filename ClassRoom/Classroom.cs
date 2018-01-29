@@ -10,10 +10,10 @@ namespace ClassRoom {
         private List<Student> _classList;
         private DateTime _semesterStart;
 
-        public Classroom(string className) {
+        public Classroom(string className, DateTime semesterStart) {
             _className = className;
+            _semesterStart = semesterStart;
             _classList = new List<Student>();
-            _semesterStart = new DateTime();
         }
 
         public string ClassName {
