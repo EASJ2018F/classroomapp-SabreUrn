@@ -15,5 +15,17 @@ namespace ClassRoom {
             _classList = new List<Student>();
             _semesterStart = new DateTime();
         }
+
+        public string ClassName {
+            get { return _className; }
+            set { _className = value; }
+        }
+        public List<Student> ClassList {
+            get { return _classList; }
+        }
+        public DateTime SemesterStart {
+            get { return _semesterStart; }
+            set { _semesterStart = value; }
+        }
     }
 }
